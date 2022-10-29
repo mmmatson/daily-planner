@@ -2,7 +2,7 @@
 
 ## Description
 
-This repository is where I created a simple calendar application that allows a user to save events for each hour of the day. 
+This repository is where I created a simple calendar application that allows a user to save events for each hour of the work day. 
 
 ## Installation
 
@@ -10,7 +10,7 @@ N/A
 
 ## Usage
 
-Placeholder for screenshot and link
+![A daily planner with the current day, date, and time, and text boxes to enter events for each hour of the work day.](./assets/images/daily-planner-screenshot.png)
 
 [Deployed website] (https://mmmatson.github.io/daily-planner/)
 
