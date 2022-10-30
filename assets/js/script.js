@@ -10,7 +10,6 @@ $(document).ready(function () {
     }
     //Display current day, date, and time using moment.js
     $('#currentDay').text(moment().format('llll'));
-
     //Color code timeblocks based on current time
     function changeColor() {
         var currentTime = moment().hours();
@@ -36,15 +35,15 @@ $(document).ready(function () {
             }
         })
     }
-
     //Call change color function
     changeColor();
-
     //Clicking save button saves events to local storage
     $('.saveBtn').click(function () {
         saveEvent();
+        //hidden message indicating daily planner saved fades in and out when button clicked
+        $('#save').fadeIn(500);
+        $('#save').delay(750).fadeOut(1250);
     })
-
     //Values saved in local storage shown even when page refreshed
     $('#time9 textarea').val(localStorage.getItem('time9'));
     $('#time10 textarea').val(localStorage.getItem('time10'));
